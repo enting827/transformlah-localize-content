@@ -8,11 +8,13 @@ Transformlah addresses three major challenges:
 - Compliance Assurance: Checks content against regional regulations and sensitive cultural references.
 
 ## Technologies Used:
-- AWS: Bedrock Agent, S3 Bucket, Lambda Function, DynamoDB, Boto3, Docker
-- Bedrock AI Model: Nova Lite, Nova Canvas, Nova Reel
-- Frontend: Vue.js 
-- Backend: Python
-- Framework: FastAPI
+* AWS AI Services: Bedrock, Bedrock Agent, Lambda Function, Boto3
+* AWS Database: DynamoDB, S3 Bucket
+* Bedrock AI Model: Nova Lite, Nova Canvas, Nova Reel
+* Frontend: Vue.js 
+* Backend: Python
+* Framework: FastAPI
+* Containerization & Deployment: Docker, EC2 instance
 
 ## Special Features:
 - Localized Content Generation: Automatically create tailored text captions, images (posts & stories), and videos.
