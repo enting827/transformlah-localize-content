@@ -1,0 +1,27 @@
+# The version attribute is now obsolete and can be removed
+# version: '3.8'
+
+services:
+  backend:
+    # Build the image using the Dockerfile in the 'api' directory
+    build: ./api
+    # Map container port 8000 to host port 8000
+    ports:
+      - "8000:8000"
+    # Mount the backend code for easy development
+    volumes:
+      - ./api:/app
+    # Restart the container if it stops unexpectedly
+    restart: unless-stopped
+
+  frontend:
+    # Build the image using the Dockerfile in the 'frontend' directory
+    build: ./frontend
+    # Map container port 8080 to host port 8080
+    ports:
+      - "8080:80"
+    # Mount the frontend code for easy development
+    volumes:
+      - ./frontend:/app
+    # Restart the container if it stops unexpectedly
+    restart: unless-stopped
